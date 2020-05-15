@@ -144,6 +144,9 @@ void board_cpu_move_smart(char *board, char marker)
         {
             if (intersects[space] & i)
             {
+                // add winning potential depending on the markers present
+                // in the 3-in-a-row winning opportunities intersecting
+                // the space.
                 if (sums[index] == 2 * CPU_MARKER + EMPTY_MARKER)
                     winning_potential += 50;
 
