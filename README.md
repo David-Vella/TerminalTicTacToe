@@ -1,7 +1,7 @@
 # Quick Start
 
 ```bash
-make compile
+make tictactoe
 ./tictactoe
 ```
 
