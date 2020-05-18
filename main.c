@@ -99,6 +99,8 @@ uint8_t play_cpu_game(uint8_t diff)
 {
     uint8_t result = 0;
 
+    uint8_t turn = 1;
+
     char board[BOARD_SIZE];
     board_init(board);
 
@@ -116,7 +118,7 @@ uint8_t play_cpu_game(uint8_t diff)
             return result;
 
         if (diff == IMPOSSIBLE)
-            board_cpu_move_smart(board, CPU_MARKER);
+            board_cpu_move_smart(board, CPU_MARKER, turn);
         else
             board_cpu_move_rand(board, CPU_MARKER);
 
@@ -125,6 +127,8 @@ uint8_t play_cpu_game(uint8_t diff)
         result = board_game_over(board);
         if (result != IN_PROGRESS)
             return result;
+        
+        ++turn;
     }
     return result;
 }

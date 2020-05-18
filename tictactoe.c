@@ -101,10 +101,8 @@ static void board_relevant_sums(const char *board, uint16_t *sums)
 // Intelligently places a marker to avoid losing 
 // board - char array of size 9
 // marker - char to be played on board
-void board_cpu_move_smart(char *board, char marker)
+void board_cpu_move_smart(char *board, char marker, uint8_t turn)
 {
-    static uint8_t turn = 1;
-
     char *cpu_move = board;
 
     char *open_spaces[BOARD_SIZE];
@@ -185,8 +183,6 @@ void board_cpu_move_smart(char *board, char marker)
             board[2 * (rand() % 4) + 1] = CPU_MARKER;
     else
         *cpu_move = CPU_MARKER;
-
-    ++turn;
 }
 
 // Checks if the game is over

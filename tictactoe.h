@@ -88,7 +88,7 @@ void board_cpu_move_rand(char *board, char marker);
 // Intelligently places a marker to avoid losing 
 // board - char array of size 9
 // marker - char to be played on board
-void board_cpu_move_smart(char *board, char marker);
+void board_cpu_move_smart(char *board, char marker, uint8_t turn);
 
 // Checks if the game is over
 // board - char array of size 9
