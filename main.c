@@ -36,8 +36,8 @@
 #define MOVE 1
 
 // diff - cpu difficultly setting
-char play_cpu_game(uint8_t diff);
-char play_two_player_game();
+uint8_t play_cpu_game(uint8_t diff);
+uint8_t play_two_player_game();
 
 // board - char array of size 9
 int8_t player_move(char *board, char marker);
@@ -95,7 +95,7 @@ int main()
     return EXIT_SUCCESS;
 }
 
-char play_cpu_game(uint8_t diff)
+uint8_t play_cpu_game(uint8_t diff)
 {
     uint8_t result = 0;
 
@@ -129,7 +129,7 @@ char play_cpu_game(uint8_t diff)
     return result;
 }
 
-char play_two_player_game()
+uint8_t play_two_player_game()
 {
     uint8_t result = 0;
 
