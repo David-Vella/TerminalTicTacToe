@@ -8,7 +8,7 @@ tictactoe                            # play game with new command
 ```
 Uninstall
 ```bash
-sudo ./uninstall
+sudo ./uninstall.sh
 ```
 
 # Manual Installation
