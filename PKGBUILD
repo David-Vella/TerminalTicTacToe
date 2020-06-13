@@ -1,4 +1,4 @@
-# Maintainer: Your Name <youremail@domain.com>
+# Maintainer: David Vella
 pkgname=tic-tac-toe
 pkgver=1.0.0
 pkgrel=1
