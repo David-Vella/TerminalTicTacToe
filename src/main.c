@@ -195,8 +195,7 @@ void display_title_screen()
 {
     const int8_t TITLE_SCREEN_WIDTH = 32;
     const int8_t TITLE_SCREEN_HEIGHT = 11;
-    const char *title_line0 = "     Welcome to Tic-Tac-Toe     \n";
-    const char *title_line1 = "     created by David Vella     \n";
+    const char *title_line1 = "     Welcome to Tic-Tac-Toe     \n";
     const char *title_line2 = "    press 1-3 to select mode    \n";
     const char *title_line3 = "  1 - player vs easy cpu        \n";
     const char *title_line4 = "  2 - player vs impossible cpu  \n";
@@ -206,9 +205,6 @@ void display_title_screen()
     werase(stdscr);
 
     display_align_vertical(TITLE_SCREEN_HEIGHT);
-
-    display_align_horizontal(TITLE_SCREEN_WIDTH);
-    printw(title_line0);
 
     display_align_horizontal(TITLE_SCREEN_WIDTH);
     printw(title_line1);

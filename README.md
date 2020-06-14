@@ -3,7 +3,7 @@
 make
 ./tic-tac-toe
 ```
-OR install on Arch Linux as a package
+Install on Arch Linux as a package:
 ```bash
 # place PKGBUILD in a new directory named tic-tac-toe
 cd tic-tac-toe
