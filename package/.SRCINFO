@@ -1,0 +1,15 @@
+pkgbase = tic-tac-toe
+	pkgdesc = A terminal tic-tac-toe app
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/David-Vella/tic-tac-toe
+	arch = any
+	license = MIT
+	makedepends = make
+	depends = gcc
+	depends = ncurses
+	source = git+https://github.com/David-Vella/tic-tac-toe.git
+	md5sums = SKIP
+
+pkgname = tic-tac-toe
+
